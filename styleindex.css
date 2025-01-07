@@ -1,0 +1,303 @@
+
+
+/* This is the syle css sheet for the index.html page*/
+/*all written by Garrett Robinson with a lot of internet help */
+
+html, body{
+margin: 0;
+padding: 0;
+width: 100%;
+
+max-width: 100vw;
+/*  overflow-x: hidden; breaks the header bar */
+}
+
+.site {
+width: 100%;
+margin: 0 auto;
+}
+
+.site p{
+font-family: Calibri;
+font-weight: lighter;
+margin: 0; /*length/dist between lines*/
+padding: 0;
+color: green;
+}
+
+.site h1{
+font-family: Calibri;
+font-weight: bold;
+/*font-size: 5vw;/* % of the viewport width*/
+color: blue;
+}
+
+.header-bar{
+position: sticky; /*relative static sticky*/
+/*height: 60px;*/
+height: 6vh;
+
+background-color: #016273;
+background-image: radial-gradient(circle, #0A9396 0.5px, transparent 0.5px);
+background-size: 5px 5px;
+
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+color: green;
+display: flex;
+/* justify-content: start; /*space-evenly*/
+align-items: center; /*center*/ /* this is up/down alignment */
+
+padding: 0px 0;
+top: 0;
+width: 100%;
+border-bottom: 2px solid #CA6702;
+
+z-index: 10;
+}
+
+.header-bar-image-sector{
+/*border: 2px solid #333;/* FOR TESTING */
+
+display: flex;
+flex: .25;
+height: 100%;
+width: 100px;
+gap: 20px;
+flex-shrink: 1;
+margin: 0px;
+
+justify-content: center;
+align-items: center;
+}
+.header-bar-text-sector{
+display: flex;
+
+/*border: 2px solid #333;/* FOR TESTING */
+flex: 5;
+height: 100%;
+width: 100px;
+gap: 20px;
+flex-shrink: 1;
+margin: 0px;
+
+justify-content: flex-start;
+align-items: center;
+}
+.header-bar-external-sector{
+/*border: 2px solid #333;/* FOR TESTING */
+
+display: flex;
+flex: 1;
+height: 100%;
+width: 100px;
+gap: 20px;
+flex-shrink: 1;
+margin: 0px;
+}
+
+.header-bar-text{
+display: flex;
+/*justify-content: space-evenly;*/
+/*width: 40vw;*/
+/*font-size: 200%;*/
+gap: 4vw;
+margin:1vw;
+font-size: clamp(1rem, 2vw, 2rem)
+}
+
+.header-bar-text h1{
+font-family: Calibri;
+color: #EE9B00; /*yellow*/
+/*color: #BB3E03; red-orange*/
+font-size: 80%;
+}
+        .header-bar-text h1:hover {
+            color: #fff; /*color to change to white*/
+        }
+
+
+
+.header-logo{
+height: 4vh;
+width: auto;
+/* filter: invert(1);
+mix-blend-mode: screen; /* this never worked, so be it*/
+background-color: #fff; /*#EE9B00;/*#EAF6F2;*/
+background-size: 15px 15px;
+border-radius: 5px;
+border: 2px solid #CA6702;/*#CA6702;#0A9396*/
+/*margin-left: 10px;*/
+margin: 5px;
+}
+
+
+
+.spacing-box{
+height: 20px;
+}
+
+.landing-head{
+font-family: Calibri;
+font-weight: bold;
+text-align: center;
+margin-top: 80px;
+}
+.landing-head p{
+font-family: Calibri;
+font-weight: lighter;
+margin: 0; /*length/dist between lines*/
+padding: 0;
+color: #EE9B00; /*yellow*/
+font-size: 20px;
+}
+.landing-head h1{
+font-family: Calibri;
+font-weight: bold;
+font-size: 60px;
+color: #BB3E03; red-orange*/
+}
+
+/* .title-box{ /*use for pages
+background-color: #CA6702;
+border: 2px solid #BB3E03;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+width: 100%;
+padding: 20px;
+
+position: relative;
+left: 50%;
+transform: translateX(-100%) translateY(15px);
+z-index: 3;
+}*/
+
+/* .title-box{
+background-color: #CA6702;
+border: 2px solid #BB3E03;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+width: 260px;
+padding: 0px;
+margin: 0;
+line-height: 0;
+position: relative; /*absolute*/
+/*left: 50%; */
+/*transform: translateX(120%) translateY(15px);*/
+/* transform: translateY(15px);
+left: 15%;
+z-index: 3;
+} OLD METHOD */
+
+.title-box{
+background-color: #CA6702;
+border: 2px solid #BB3E03;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+/*width: 280px;*/
+
+padding: 0px;
+margin: 0px;
+line-height: 0;
+
+position: absolute; /* absolute instead of relative makes it ignore doc flow/resizing */
+left: -15px;
+top: -30px;
+z-index: 3;
+}
+
+.title-box h1{
+
+margin: 18px;
+font-family: Calibri;
+font-weight: bold;
+/*font-size: auto;*/
+font-size: 3vh;
+color: #fff;
+text-align: center;
+}
+
+.center-box{
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+width: 80%;
+max-width: 1200px;
+padding:20px;
+
+position: relative; /*absolute*/
+left: 50%;
+transform: translateX(-50%);
+z-index: 2;
+}
+
+.featured-section{ /*remade into a flex container*/
+display: flex;
+/*height: 20vh;*/
+min-height: 20vh;
+align-items: center;
+gap: 20px;
+padding: -30px;
+/* background-color: #BB3E03; /* used for editing */
+
+width: 100%;
+/*display: flex;
+flex-shrink: 1; */
+/* margin: 0 0;
+/* justify-content: space-between;*/
+	transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+        .featured-section:hover {
+            background-color: #0A9396; /*color to change to*/
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /*shadow effect*/
+        }
+
+.text-sector{
+/*border: 2px solid #BB3E03; FOR TESTING */
+flex: 1;
+height: 100%;
+
+gap: 20px;
+flex-shrink: 1;
+margin: 10px;
+}
+.image-sector{
+height: 100%;
+/*border: 2px solid #BB3E03;*/
+display: flex;
+margin: 10px;
+
+flex: 0;
+align-items: center;
+justify-content: end;
+}
+
+.featured-title{
+font-family: Calibri;
+font-weight: bold;
+font-size:  4vh;
+/*font-size: clamp(1.8rem, 3vw, 2.5rem); /* Responsive scaling */
+color: #000;
+margin: 0 0 10px;
+}
+
+.featured-passage{
+font-family: Calibri;
+font-weight: light;
+
+font-size: 2.5vh;
+color: #333;
+margin: 0;
+}
+
+.featured-image{
+height: 18vh;
+width: auto;
+}
+
+.horizontal-line {
+width: 100%;
+height: 2px; /* Thickness*/
+background-color: #000;
+margin: 5px 5px; /* Spacing above and below the line */
+}
