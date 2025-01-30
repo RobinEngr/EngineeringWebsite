@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Intelligent Medicine Dispenser -->
+
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content = " width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/styleindex.css">
+	<title>Garrett Robinson | Projects | Intelligent Medicine Dispenser </title>
+	<link rel="icon" href ="/PureSignature.ico" type="image/x-icon">
+</head>
+
+<body style="background-color: #EAF6F2;"> <!-- EFEFB5 -->
+
+
+<div class="header-bar">
+	<div class="header-bar-image-sector">
+	<img src=/PureSignature.ico alt="Signature-Logo" class="header-logo">
+	</div>
+	
+	<div class="header-bar-text-sector">
+	<div class="header-bar-text">
+                <a href="https://garretteng.com/" style="text-decoration: none;"><h1> Home</h1></a>
+                <a href="https://garretteng.com/projects" style="text-decoration: none;"><h1>Projects</h1></a>
+                <!-- <a href="https://garretteng.com/plans" style="text-decoration: none;"><h1>Plans</h1></a> -->
+                <a href="https://garretteng.com/about" style="text-decoration: none;"><h1>About</h1></a>
+                <a href="https://garretteng.com/contact" style="text-decoration: none;"><h1>Contact</h1></a>
+	</div>
+	</div>
+
+	<div class="header-bar-external-sector"></div>
+</div>
+
+<div class ="spacing-box" style = "height: 3vw;"></div>
+
+<div class ="center-box">
+	                 <div class ="center-text-box">
+	<div class ="page-head" style = "text-align: left; margin-top: 1em;">
+	<h1>Project: Intelligent Medicine Dispenser</h1>
+	<p style = "margin-top: 0em">5/21/24 – 8/6/24<br>Idea Pitched – Product Presentation</p>
+	<p2 style = "color: #000; margin-top: 1em;"><br> Last Updated: 1/29/25 </p2>
+	</div>
+
+	<div class ="horizontal-line"></div>
+	
+	 <div class ="page-body">
+        <p2 style = "color: #CA6702; margin-top: 1em;"><br>Introduction<span style="display: inline-block; width: 50px; border-top: 2px solid #CA6702; vertical-align: middle; margin: 0 5px;"></span></p2>
+	<p style = "margin-top: 1em">
+This project was a collaborative effort between me and two classmates during my senior capstone class, Product Realization. We aimed to tackle the difficulty in everyday pill taking. 
+	</p>
+	<p style = "margin-top: 1em">
+We wanted to create a product that could automatically track, dispense, and notify the user about their medications. Along with our product concept, we aimed to create a prototype representative of the real product we intended to produce.
+	</p>
+        <p2 style = "color: #CA6702; margin-top: 1em;"><br>Mechanical Overview<span style="display: inline-block; width: 50px; border-top: 2px solid #CA6702; vertical-align: middle; margin: 0 5px;"></span></p2>
+        <p style = "margin-top: 1em">
+SolidWorks was used to design the front and back parts of the housing, and the components inside of them. They were printed on my Ender 3 3D printer. I also assembled a custom button board and made a mount to the rest of the housing. It lit up for visual clarity and allowed menu navigation.
+        </p>
+
+        <p style = "margin-top: 1em">
+The housing represented the final design while being scaled to fit our current electronics. Its design allowed me to put in the battery, buttons, and OLED screen while accommodating the space for my group member’s dispensing components.
+        </p>
+
+        <div class = "figure-container" style = "margin-top: 1vw; gap: 20px;">
+         <div class = "half-figure-sector">
+          <img src=/DispCADDesign.PNG alt="Image of CAD Design" class="figure-image">
+         </div>
+         <div class = "half-figure-sector">
+          <img src=/ButtonBoard.PNG alt="Button Board" class="figure-image">
+         </div>
+        </div>
+
+        <p style = "margin-top: 1em">
+Late in development, we found that our previous gear system tended to slip. I figured out a method that eliminated its issues by recessing the gears in each other. It allowed us to thicken them while staying in the space we allotted. This can be seen in the figure:
+        </p>
+
+        <div class = "figure-container" style = "margin-top: 1vw;">
+        <img src=/MedDispGearDiagram.PNG alt="Gear Redesign" class="figure-image">
+        </div>
+
+<p2 style = "color: #CA6702; margin-top: 1em;"><br>Electrical Overview<span style="display: inline-block; width: 50px; border-top: 2px solid #CA6702; vertical-align: middle; margin: 0 5px;"></span></p2>
+
+        <p style = "margin-top: 1em">
+I also made our electrical design using components like the Adafruit Metro Mini microcontrollers as they were nearly equivalent to Arduinos and from an approved vendor.
+        </p>
+        <p style = "margin-top: 1em">
+I programmed a Metro Mini microcontroller with an Arduino library for OLED screen function. The screen allowed the user to interact with simple menus to tailor their device. Additionally, my program involved the UART protocol to send information. It allowed my code to connect to my teammate’s microcontroller and give information on quantity and which pills to dispense.
+        </p>
+
+        <div class = "figure-container" style = "margin-top: 1vw; gap: 20px;">
+         <div class = "half-figure-sector">
+          <img src=/DispMenu.PNG alt="Image of OLED Menu" class="figure-image">
+         </div>
+         <div class = "half-figure-sector">
+          <img src=/DispParts.PNG alt="Image of Components on Table" class="figure-image">
+         </div>
+        </div>
+
+        <p2 style = "color: #CA6702; margin-top: 1em;"><br>Prototype Cost<span style="display: inline-block; width: 50px; border-top: 2px solid #CA6702; vertical-align: middle; margin: 0 5px;"></span></p2>
+        <p style = "margin-top: 1em; margin-bottom: 1em;">
+The cost for prototype parts was about $76. This was highly competitive compared to the market leaders we researched. We determined that there existed possible omissions and alternate circuit designs to reduce the cost in a final product, as well.
+        </p>
+
+        <p2 style = "color: #CA6702; margin-top: 1em;"><br>Impact<span style="display: inline-block; width: 50px; border-top: 2px solid #CA6702; vertical-align: middle; margin: 0 5px;"></span></p2>
+        <p style = "margin-top: 1em; margin-bottom: 1em;">
+This project met our milestone trend analysis (MTA) that outlined a plan for our final product presentation. The prototype itself showcased many features. Its battery lasted 31 hours on a charge. It could automatically dispense, which aids our older target market in ease of use. It also had visual and audio indicators for pill taking, giving it accommodations for the disabled.
+        </p>
+        <p style = "margin-top: 1em; margin-bottom: 1em;">
+Our presentation was well received by our professor, who was impressed by the features which we were able to demonstrate physically. Our product landed us high marks in the course and exemplified my technical skills, teamwork, and ability to meet deadlines.
+        </p>
+        <div class = "figure-container" style = "margin-top: 1vw;">
+        <img src=/PillDispFin.jpg alt="Button Board" class="figure-image">
+        </div>
+
+
+</div>
+</div>
+
+<!--
+        <p style = "margin-top: 1em">
+        b
+        </p>
+
+
+        <div class = "figure-container" style = "margin-top: 1vw; gap: 20px;">
+         <div class = "half-figure-sector">
+          <img src=/RemoteIgnitorDevice.jpg alt="Image of Device" class="figure-image">
+         </div>
+         <div class = "half-figure-sector">
+          <img src=/RemoteIgnitorDevice.jpg alt="Image of Device" class="figure-image">
+         </div>
+        </div>
+-->
+	 </div>
+	
+
+			</div>
+
+</div>
+<!--
+<div class ="spacing-box" style = "height: 1vw;"></div>
+
+<div class = "center-box">
+
+                         <div class ="center-text-box">
+         <div class ="page-head" style = "text-align: left;">
+        <h1 style = "margin-top: 0em">Links</h1>
+	 </div>
+
+        <div class ="horizontal-line"></div>
+         <div class ="page-body">
+
+
+NOTE: THIS IS NOT HOW TO DO A P NESTED LINK, REMAKE IN THE FUTURE:
+
+        <a href="https://www.linkedin.com/in/robingarrettengr" style="text-decoration: none; color: #BB3E03; font-family: inherit; font-weight: bold; "target="_blank">
+        <p style = "margin-top: 1em">Linkedin</p></a>
+         </div>
+        		</div>
+</div>
+-->
+<div class ="spacing-box" style = "height: 3vw;"></div>
+
+<div class="collapsible-section">
+    <button class="collapsible-button" style ="text-decoration: none;">
+	<div class ="center-text-box" style ="width: 78%;">
+	<div class ="page-body">
+	<h1 style ="color: #fff; text-decoration: none;">Links and Resources ></h1>
+	</div>
+	</div>
+</button>
+    <div class="collapsible-content">
+	<div class="page-body">
+         <div class ="center-text-box" style ="width: 78%;">   
+
+        <p2 style = "color: #000; margin-top: 1em;"><br>Links<span style="display: inline-block; width: 50px; border-top: 2px solid #000; vertical-align: middle; margin: 0 5px;"></span></p2>
+
+        <a href="https://www.engineering.pitt.edu/programs/ipde/innovation-product-design-and-entrepreneurship/" style="text-decoration: none; color: #BB3E03; font-family: inherit; font-weight: bold; "target="_blank">
+        <p style = "margin-top: 1em">Innovation, Product Design, and Entrepreneurship Certificate, Pitt [Site]</p></a>
+
+        <a href="https://www.youtube.com/watch?v=HVHVkKt-ldc" style="text-decoration: none; color: #BB3E03; font-family: inherit; font-weight: bold; "target="_blank">
+        <p style = "margin-top: 1em">"Arduino OLED Menu Tutorial", upir [YouTube]</p></a>
+
+        <p2 style = "color: #000; margin-top: 1em;"><br>Market Research Materials<span style="display: inline-block; width: 50px; border-top: 2px solid #000; vertical-align: middle; margin: 0 5px;"></span></p2>
+
+        <a href="https://www.marketresearch.com/LP-Information-Inc-v4134/Global-Pill-Dispensers-Reminders-Growth-36463321/" style="text-decoration: none; color: #BB3E03; font-family: inherit; font-weight: bold; "target="_blank">
+        <p style = "margin-top: 1em">"Global Pill Dispensers & Reminders Market Growth 2024-2030", Market Research [Site]</p></a>
+
+        <a href="https://hpi.georgetown.edu/rxdrugs/" style="text-decoration: none; color: #BB3E03; font-family: inherit; font-weight: bold; "target="_blank">
+        <p style = "margin-top: 1em">"Prescription Drugs", Health Policy Institute [Site]</p></a>
+
+        <a href="https://herohealth.com/blog/medication-management/are-pill-organizers-really-safe/" style="text-decoration: none; color: #BB3E03; font-family: inherit; font-weight: bold; "target="_blank">
+        <p style = "margin-top: 1em">"The Pill Organizer: A Comprehensive Guide", Hero Health [Site]</p></a>
+
+<div class ="spacing-box" style = "height: 1em;"></div>
+	 </div>
+   	</div>
+    </div>
+  </div>
+
+<div class ="spacing-box" style = "height: 3vw;"></div>
+
+</body>
+
+
+<!-- END -->
+</html>
+
+  <script>
+    document.querySelectorAll('.collapsible-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.classList.toggle('open');
+      });
+    });
+  </script>
